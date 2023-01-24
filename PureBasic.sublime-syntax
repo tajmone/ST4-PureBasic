@@ -238,8 +238,10 @@ contexts:
       scope: punctuation.definition.string.begin.purebasic
       push:
         - meta_scope: string.quoted.double.purebasic
-        - match: '\\[\w\d"]'
+        - match: \\[abfnrtv"\\]
           scope: constant.character.escape.purebasic
+        - match: \\. # Any other escape is invalid
+          scope: invalid.illegal.escape.purebasic
         - match: '"'
           scope: punctuation.definition.string.end.purebasic
           pop: true
