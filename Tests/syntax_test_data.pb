@@ -69,15 +69,15 @@ DataSection
 ;;      ^^^^ keyword.other.purebasic
 ;;          ^ punctuation.separator.purebasic
 ;;           ^ storage.type.purebasic
-;;             ^^^ constant.numeric.purebasic
+;;             ^^^ constant.numeric.decimal.purebasic
 ;;                ^ punctuation.separator.purebasic
-;;                  ^^^ constant.numeric.purebasic
+;;                  ^^^ constant.numeric.decimal.purebasic
 ;;                     ^ punctuation.separator.purebasic
-;;                       ^^^^ constant.numeric.purebasic
+;;                       ^^^^ constant.numeric.decimal.purebasic
 ;;                           ^ punctuation.separator.purebasic
-;;                             ^^^^ constant.numeric.purebasic
+;;                             ^^^^ constant.numeric.decimal.purebasic
 ;;                                 ^ punctuation.separator.purebasic
-;;                                   ^^^ constant.numeric.purebasic
+;;                                   ^^^ constant.numeric.decimal.purebasic
 
     StringData:
 ;;  ^^^^^^^^^^ entity.name.label.purebasic

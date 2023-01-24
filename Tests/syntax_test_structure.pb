@@ -84,7 +84,7 @@ Structure WithArray
 ;;   ^ punctuation.separator.purebasic
 ;;    ^ storage.type.purebasic
 ;;     ^ punctuation.section.brackets.begin
-;;      ^ constant.numeric.purebasic
+;;      ^ constant.numeric.decimal.purebasic
 ;;       ^ punctuation.section.brackets.end
     Array c.l(3,3)
 ;;  ^^^^^ keyword.declaration.purebasic
@@ -92,9 +92,9 @@ Structure WithArray
 ;;         ^ punctuation.separator.purebasic
 ;;          ^ storage.type.purebasic
 ;;           ^ punctuation.section.parens.begin.purebasic
-;;            ^ constant.numeric.purebasic
+;;            ^ constant.numeric.decimal.purebasic
 ;;             ^ punctuation.separator.purebasic
-;;              ^ constant.numeric.purebasic
+;;              ^ constant.numeric.decimal.purebasic
 ;;               ^ punctuation.section.parens.end.purebasic
 EndStructure
 ;; <- keyword.other.purebasic
@@ -159,7 +159,7 @@ Something()\End = 1
 ;;         ^ punctuation.accessor.purebasic
 ;;          ^^^ variable.other.member.purebasic
 ;;              ^ keyword.operator.assignment.purebasic
-;;                ^ constant.numeric.purebasic
+;;                ^ constant.numeric.decimal.purebasic
 
 Debug Something()\End
 ;;               ^ punctuation.accessor.purebasic

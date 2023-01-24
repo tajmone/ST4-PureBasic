@@ -16,9 +16,9 @@ EndEnumeration
 Enumeration 10 Step 2
 ;; <- storage.type.enum keyword.declaration.enum.purebasic
 ;;^^^^^^^^^ storage.type.enum keyword.declaration.enum.purebasic
-;;          ^^ constant.numeric.purebasic
+;;          ^^ constant.numeric.decimal.purebasic
 ;;             ^^^^ keyword.other.purebasic
-;;                  ^ constant.numeric.purebasic
+;;                  ^ constant.numeric.decimal.purebasic
     #Four
     #Five
     #Six
@@ -41,9 +41,9 @@ Enumeration EverythingAtOnce 2 Step 3;Comment
 ;; <- storage.type.enum keyword.declaration.enum.purebasic
 ;;^^^^^^^^^ storage.type.enum keyword.declaration.enum.purebasic
 ;;          ^^^^^^^^^^^^^^^^ entity.name.enum.purebasic
-;;                           ^ constant.numeric.purebasic
+;;                           ^ constant.numeric.decimal.purebasic
 ;;                             ^^^^ keyword.other.purebasic
-;;                                  ^ constant.numeric.purebasic
+;;                                  ^ constant.numeric.decimal.purebasic
 ;;                                   ^^^^^^^^ comment.line.purebasic
     #ExitCode_Success
 ;;  ^ punctuation.definition.variable.purebasic

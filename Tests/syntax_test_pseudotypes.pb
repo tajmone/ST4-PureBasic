@@ -27,7 +27,7 @@ Import "User32.lib"
 ;;                                                          ^ punctuation.separator.purebasic
 ;;                                                           ^ storage.type.purebasic
 ;;                                                             ^ keyword.operator.assignment.purebasic
-;;                                                               ^ constant.numeric.purebasic
+;;                                                               ^ constant.numeric.decimal.purebasic
 ;;                                                                ^ punctuation.section.parens.end.purebasic
 EndImport
 ;; <- keyword.control.import.purebasic

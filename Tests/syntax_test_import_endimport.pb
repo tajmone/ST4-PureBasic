@@ -25,7 +25,7 @@ Import "User32.lib"
 ;;                                            ^ punctuation.separator.purebasic
 ;;                                             ^ storage.type.purebasic
 ;;                                               ^ keyword.operator.assignment.purebasic
-;;                                                 ^ constant.numeric.purebasic
+;;                                                 ^ constant.numeric.decimal.purebasic
 ;;                                                  ^ punctuation.section.parens.end.purebasic
     MsgBox(Window.i, Body$, Title$, Flags.i) As "_MessageBoxA@16"
 EndImport

@@ -257,8 +257,20 @@ contexts:
           pop: true
 
   numbers:
-    - match: '\-?\d+(\.\d+)?(e\-\d+)?'
-      scope: constant.numeric.purebasic
+    - match: '[-]?\$[0-9a-fA-F]+\b'
+      scope: constant.numeric.hex.purebasic
+    - match: '[-]?%[01]+\b'
+      scope: constant.numeric.binary.purebasic
+    - match: |
+        (?x)
+        [-]?\b\d+
+        (
+            \.\d+ (?:[eE][\-\+]?\d+)?   # With decimal point separator
+        |         (?:[eE][\-\+]?\d+)    # Without decimal point separator
+        )[a-zA-Z]*\b
+      scope: constant.numeric.floating-point.purebasic
+    - match: '[-]?\b\d+\b'
+      scope: constant.numeric.decimal.purebasic
 
   # ...
 

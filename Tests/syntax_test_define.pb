@@ -60,13 +60,13 @@ Define.c aao1.i = 2, x.q = 1.3, aao2.s = "all at once"
 ;;           ^ punctuation.separator.purebasic
 ;;            ^ storage.type.purebasic
 ;;              ^ keyword.operator.assignment.purebasic
-;;                ^ constant.numeric.purebasic
+;;                ^ constant.numeric.decimal.purebasic
 ;;                 ^ punctuation.separator.purebasic
 ;;                   ^ variable.other.purebasic
 ;;                    ^ punctuation.separator.purebasic
 ;;                     ^ storage.type.purebasic
 ;;                       ^ keyword.operator.assignment.purebasic
-;;                         ^^^ constant.numeric.purebasic
+;;                         ^^^ constant.numeric.floating-point.purebasic
 ;;                            ^ punctuation.separator.purebasic
 ;;                              ^^^^ variable.other.purebasic
 ;;                                  ^ punctuation.separator.purebasic

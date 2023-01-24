@@ -7,7 +7,7 @@ Dim SimpleArray(1)
 ;;^ keyword.declaration.purebasic
 ;;  ^^^^^^^^^^^ entity.name.function.purebasic
 ;;             ^ punctuation.section.parens.begin.purebasic
-;;              ^ constant.numeric.purebasic
+;;              ^ constant.numeric.decimal.purebasic
 ;;               ^ punctuation.section.parens.end.purebasic
 
 Dim TwoDimensionalArray(1, 1)
@@ -15,9 +15,9 @@ Dim TwoDimensionalArray(1, 1)
 ;;^ keyword.declaration.purebasic
 ;;  ^^^^^^^^^^^^^^^^^^^ entity.name.function.purebasic
 ;;                     ^ punctuation.section.parens.begin.purebasic
-;;                      ^ constant.numeric.purebasic
+;;                      ^ constant.numeric.decimal.purebasic
 ;;                       ^ punctuation.separator.purebasic
-;;                         ^ constant.numeric.purebasic
+;;                         ^ constant.numeric.decimal.purebasic
 ;;                          ^ punctuation.section.parens.end.purebasic
 
 ReDim SimpleArray(2)
@@ -25,7 +25,7 @@ ReDim SimpleArray(2)
 ;;^^^ keyword.declaration.purebasic
 ;;    ^^^^^^^^^^^ entity.name.function.purebasic
 ;;               ^ punctuation.section.parens.begin.purebasic
-;;                ^ constant.numeric.purebasic
+;;                ^ constant.numeric.decimal.purebasic
 ;;                 ^ punctuation.section.parens.end.purebasic
 
 Dim StringArray.s(1)
@@ -35,5 +35,5 @@ Dim StringArray.s(1)
 ;;             ^ punctuation.separator.purebasic
 ;;              ^ storage.type.purebasic
 ;;               ^ punctuation.section.parens.begin.purebasic
-;;                ^ constant.numeric.purebasic
+;;                ^ constant.numeric.decimal.purebasic
 ;;                 ^ punctuation.section.parens.end.purebasic
