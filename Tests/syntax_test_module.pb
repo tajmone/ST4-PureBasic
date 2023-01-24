@@ -1,4 +1,4 @@
-﻿;; SYNTAX TEST "Packages/PureBasic/PureBasic.sublime-syntax"
+﻿;; SYNTAX TEST "Packages/ST4-PureBasic/PureBasic.sublime-syntax"
 
 EnableExplicit
 

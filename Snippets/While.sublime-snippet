@@ -1,8 +1,8 @@
 <snippet>
-    <scope>source.purebasic</scope>
-    <tabTrigger>While</tabTrigger>
-    <content><![CDATA[While ${1:Expression}
-    ${0:;TODO}
+	<scope>source.purebasic</scope>
+	<tabTrigger>While</tabTrigger>
+	<content><![CDATA[While ${1:Expression}
+	${0:;TODO}
 Wend]]></content>
-    <description>while loop</description>
+	<description>while loop</description>
 </snippet>

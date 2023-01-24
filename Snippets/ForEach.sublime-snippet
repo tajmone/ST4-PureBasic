@@ -1,8 +1,8 @@
 <snippet>
-    <scope>source.purebasic</scope>
-    <tabTrigger>ForEach</tabTrigger>
-    <content><![CDATA[ForEach ${1:List()}
-    $0
+	<scope>source.purebasic</scope>
+	<tabTrigger>ForEach</tabTrigger>
+	<content><![CDATA[ForEach ${1:List()}
+	$0
 Next]]></content>
-    <description>fast iteration</description>
+	<description>fast iteration</description>
 </snippet>

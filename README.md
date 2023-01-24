@@ -1,70 +1,113 @@
-# PureBasic Language Support for Sublime Text
+[![PureBasic version][pb badge]][PureBasic]&nbsp;
+[![Sublime Text version][st badge]][Sublime Text 4]&nbsp;
+![package version][status badge]&nbsp;
+[![MIT License][license badge]][LICENSE]&nbsp;
 
-[![Syntax Tests](https://github.com/peterthomashorn/purebasic-language-for-sublime-text/actions/workflows/main.yml/badge.svg)](https://github.com/peterthomashorn/purebasic-language-for-sublime-text/actions/workflows/main.yml)
+# PureBasic Support for Sublime Text 4
 
-This is a spare time experiment to extend [Sublime Text](https://www.sublimetext.com) with convenient support for [PureBasic](https://www.purebasic.com).
+- https://github.com/tajmone/ST4-PureBasic
 
-For now the most recent and stable PureBasic release represents the specification to conform to.
-Deprecated or removed symbols from past releases can also be supported, if no conflicts result from that.
+Customized fork of [Peter Thomas Horn]'s package:
 
-If you notice anything like a PureBasic keyword or standard library procedure missing, please [report an issue](https://github.com/peterthomashorn/purebasic-language-for-sublime-text/issues).
+- https://github.com/peterthomashorn/purebasic-language-for-sublime-text
 
-## Syntax Definition
+Project maintained by [Tristano Ajmone], for personal use.
 
-This package ships with a syntax definition which may not cover everything (yet) but most of what matters for a pleasant editing and reading experience.
-In example: you can quickly navigate to procedure implementations because Sublime Text recognizes them because of the syntax definition.
+-----
 
-If you stumble across unrecognized keywords or other expressions, then please file an issue in [the issue tracker](https://github.com/peterthomashorn/purebasic-language-for-sublime-text/issues). As far as the official documentation goes I think I did not miss anything. As [#22](https://github.com/peterthomashorn/purebasic-language-for-sublime-text/issues/22) shows sometimes the syntax definition needs only a little bit of tweaking to improve support for already known expressions.
+**Table of Contents**
 
-## Symbol List
+<!-- MarkdownTOC autolink="true" bracket="round" autoanchor="false" lowercase="only_ascii" uri_encoding="true" levels="1,2,3" -->
 
-Important entities like procedures or structures are listed Sublime Text's symbol list for quick navigation.
+- [About](#about)
+- [Installing](#installing)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Completions
+<!-- /MarkdownTOC -->
 
-The package ships [snippets](https://www.sublimetext.com/docs/completions.html) for regularly used constructs like conditional clauses or procedure implementations.
-Also it provides [completions](https://www.sublimetext.com/docs/completions.html) for keywords and the library procedures (including parameters) shipped with PureBasic.
+-----
 
-## Build System
+# About
 
-This package features a simple [Sublime Text build system](https://www.sublimetext.com/docs/build_systems.html) for PureBasic.
-It enables you to build and run the current PureBasic source code file.
+This is my personal fork of [Peter Thomas Horn]'s package, _for personal use_.
+Unlike Peter's upstream project, which is [enlisted at Package Control], this fork _will not_ be submitted to [Package Control].
 
-The build system assumes the PureBasic compiler to be available in the `PATH`.
-Please refer to the PureBasic documentation for setting up commandline usage. Not [the documentation you likely think of](https://www.purebasic.com/documentation/) as I would do, too, but the Install.txt shipped with PureBasic. In example for macOS it is located inside the PureBasic.app bundle in `Contents/Resources/`.
 
-## Installation
+# Installing
 
-### Package Control
+:no_entry: **_Don't!_** :no_entry:
 
-[This is available on Package Control](https://packagecontrol.io/packages/PureBasic).
+Use Peter's [original package] instead, which can be installed via [Package Control] directly from within Sublime Text.
 
-### Manual
 
-Otherwise it can be installed manually by cloning the repository in [your package directory of Sublime Text](https://www.sublimetext.com/docs/packages.html#locations).
+# Contributing
 
-## History
+:no_entry: **_Don't!_** :no_entry:
 
-Years ago, when there was still Sublime Text 2 and no Atom around, I tried to add support for PureBasic to Sublime Text.
-My main motivation was the cumbersome user experience of the PureBasic IDE, especially on Linux and macOS.
-Back then I was not close to where I am now in terms of software engineering skills. So I never got far.
+I manage this project erratically in my free time, I don't have extra time to dedicate to managing third party contributions.
 
-When [Atom](https://atom.io) was released it took not much time for me to switch to it as a sidekick instead of Sublime Text.
-It was much more approachable for me due to the web technologies used and completely free.
-When I was thinking about a more convenient way of editing PureBasic source code, I created a language support package.
-It turned out pretty fine (in my opinion). Though PureBasic already was nostalgy instead of a serious interest.
-Career already took me elsewhere.
+If you have useful contributions, submit them to Peter's [upstream project] instead — that's the main PureBasic package for Sublime Text, your contributions will benefit more end users.
 
-So every now and then I have a nostalgic urge to pick up PureBasic again. Though meanwhile I came back to Sublime Text as a sidekick.
-Atom, rooted in its Electron.js foundation, is a horribly slow and resource hungry editor and at some point I was tired of it.
-I ported much stuff from [my Atom language support package](https://github.com/peterthomashorn/language-purebasic) in form of this Sublime Text package.
-Sublime Text is much faster and efficient, especially with large files. This time I took it further.
+# License
 
-## Contributing
+- [`LICENSE`][LICENSE]
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for further information.
+This project is Copyright © by [Peter Thomas Horn] and [Tristano Ajmone], released under the MIT License.
 
-## License
+```
+MIT License
 
-This is free and unencumbered software released into the public domain.
-See [LICENSE](LICENSE) for further information.
+Copyright (c) 2023 Tristano Ajmone
+Copyright (c) 2022 Peter Thomas Horn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+<!-----------------------------------------------------------------------------
+                               REFERENCE LINKS
+------------------------------------------------------------------------------>
+
+[Package Control]: https://packagecontrol.io/ "Package Control website"
+[PureBasic]: https://www.purebasic.com/ "PureBasic website"
+[Sublime Text 4]: https://www.sublimetext.com/ "Sublime Text website"
+
+<!-- misc. -->
+
+[enlisted at Package Control]: https://packagecontrol.io/packages/PureBasic "Peter's PureBasic package page at Package Control"
+[original package]: https://packagecontrol.io/packages/PureBasic "Peter Horn's PureBasic package page at Package Control"
+[upstream project]: https://github.com/peterthomashorn/purebasic-language-for-sublime-text "Upstream package repository, by Peter Horn"
+
+<!-- badges -->
+
+[license badge]: https://img.shields.io/badge/license-MIT-00b5da.svg
+[status badge]: https://img.shields.io/badge/status-beta-orange "Package progress status"
+[pb badge]: https://img.shields.io/badge/PureBasic-6.00-brightgreen
+[st badge]: https://img.shields.io/badge/Sublime_Text-4147-brightgreen
+
+<!-- people and orgs -->
+
+[Peter Thomas Horn]: https://github.com/peterthomashorn "View Peter Thomas Horn's GitHub profile"
+[Tristano Ajmone]: https://github.com/tajmone "View Tristano Ajmone's GitHub profile"
+
+<!-- project files -->
+
+[LICENSE]: ./LICENSE "View MIT License file"
+
+<!-- EOF -->

@@ -1,3 +1,8 @@
+##############################################
+#  PureBasic package for Sublime Text 4      #
+#  https://github.com/tajmone/ST4-PureBasic  #
+##############################################
+
 ## PureBasic
 ############
 *.pb.cfg
@@ -5,111 +10,52 @@
 *.pbp
 project.cfg
 
-
 ## Sublime Text 4
 #################
 *.sublime-project
 *.sublime-workspace
 
+## Misc Work Files
+##################
 
-## Binary files
-###############
+# Temporary/backup or removed files and folders:
+___*
+___*.*
 
-# Object files
-# ------------
-*.elf
-*.ko
-*.o
-*.obj
+# Links and URLs
+*.lnk
+*.url
 
-# Static libraries
-# ----------------
-*.a
-*.la
-*.lib
-*.lo
+## Apps Local Settings & Temp Files
+###################################
 
-# Shared objects
-# --------------
-*.dll
-*.dylib
-*.so
-*.so.*
+# Chrome's debug logs for local HTML pages:
+debug.log
 
-# Executables
-# -----------
-*.app
-*.exe
-*.out
+############################
+## COMMON IGNORE PATTERNS ##
+############################
 
-
-## OS Specific
-##############
-## Created by https://www.gitignore.io/api/linux,macos,windows
-
-### Linux ###
+## Linux
+########
 *~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
 .directory
-
-# Linux trash folder which might appear on any partition or disk
+.fuse_hidden*
+.nfs*
 .Trash-*
 
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### macOS ###
-
-# General
-.DS_Store
+## macOS
+########
+*.DS_Store
+._*
 .AppleDouble
 .LSOverride
-
-# Icon must end with two \r
 Icon
 
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### Windows ###
-
-# Windows thumbnail cache files
+## Windows
+##########
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+Desktop.ini
+.BIN/
