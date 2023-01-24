@@ -39,10 +39,11 @@ contexts:
           pop: true
 
   constants:
-    - match: '(#)([\w_]+)\b'
+    - match: '(#)([\w_]+)(\$)?'
       captures:
         0: variable.other.constant.purebasic
         1: punctuation.definition.variable.purebasic
+        3: punctuation.definition.variable.purebasic
 
   declarations:
     - match: '\b(?i:(Enumeration|EnumerationBinary))(\s+(\D\w+))?\b'
@@ -226,7 +227,13 @@ contexts:
   # Strings and numbers.
   #
   literals:
-    # Strings with escape sequences require a tilde before the beginning double quote.
+    - include: strings-escaped
+    - include: strings-unescaped
+    - include: numbers
+
+  strings-escaped:
+    # Strings with escape sequences require a tilde before the
+    # opening double quote delimiter.
     - match: '~"'
       scope: punctuation.definition.string.begin.purebasic
       push:
@@ -237,6 +244,7 @@ contexts:
           scope: punctuation.definition.string.end.purebasic
           pop: true
 
+  strings-unescaped:
     # Literal strings without escape sequences.
     - match: '"'
       scope: punctuation.definition.string.begin.purebasic
@@ -246,8 +254,11 @@ contexts:
           scope: punctuation.definition.string.end.purebasic
           pop: true
 
+  numbers:
     - match: '\-?\d+(\.\d+)?(e\-\d+)?'
       scope: constant.numeric.purebasic
+
+  # ...
 
   keywords:
     - include: operators_all

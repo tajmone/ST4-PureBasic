@@ -2,7 +2,15 @@
 
 EnableExplicit
 
-#CustomConstant = 123
-;; <- variable.other.constant.purebasic punctuation.definition.variable.purebasic
-;; <- variable.other.constant.purebasic
-;;^^^^^^^^^^^^^ variable.other.constant.purebasic
+  #CustomConstant = 123
+;;^                     punctuation.definition.variable
+;;^^^^^^^^^^^^^^^       variable.other.constant
+
+  #StrConst = "PB"
+;;^                     punctuation.definition.variable
+;;^^^^^^^^^             variable.other.constant
+
+  #DollarConst$ = "PB"
+;;^                     punctuation.definition.variable
+;;            ^         punctuation.definition.variable
+;;^^^^^^^^^^^^^         variable.other.constant
